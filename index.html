@@ -1,4 +1,4 @@
-C:\Users\Tanesha Barnes\Documents\webdev\GitHub\portfolio\index.html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,11 +20,15 @@ C:\Users\Tanesha Barnes\Documents\webdev\GitHub\portfolio\index.html
        footer{
            font-size: small;
        }
+       .bar{
+         width:150px;
+         height: auto;
+       }
     </style>
 </head>
 <body class="container">
 
-    <header class="pb-3 mb-4 border-bottom">
+    <header class="pb-3 mb-2 border-bottom">
         <i class="fa-brands fa-python fa-2x"></i>
         <span class="fs-4">&nbsp;Python Project </span>
         <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
@@ -41,23 +45,87 @@ C:\Users\Tanesha Barnes\Documents\webdev\GitHub\portfolio\index.html
             </div>
         </section>
         <section class="row d-flex justify-content-between">
-            <div class=" col-md-4 align-items-md-stretch">
+            <div class=" col-md-3 align-items-md-stretch">
               <div class=" mt-3 p-3 fw-lighter text-light bg-dark rounded-3">
                   <h2 class=" fw-lighter text-danger">Project Description</h2>
                   <p>The dataset represent box office data for marvel movies like the release date, tomato meter, audience score, movie duration, producution budget, and domestic and worldwide box office ticket sales.<br/></p>
                   <ul>
                     <li>Dataset consisted of 27 rows and 10 columns.</li>
-                    <li>Dataset was checked for null and duplicate values. None found.</li>
-                    <li>3 columns types were changed from type object to type float (production_budget, opening_weekend, domestic_box_office).</li>
+                    <li>Checked for null and duplicate values. None found.</li>
+                    <li>3 columns types were changed from type object to type float.</li>
+                    <ul>
+                      <li>production_budget</li> 
+                      <li>opening_weekend</li>
+                      <li>domestic_box_office</li>
+                    </ul>
                   </ul> 
                   <a href="https://raw.githubusercontent.com/teeloren/mcu_data/main/mcu_box_office.csv" class="btn btn-secondary" role="button" target="_blank">Dataset</a> &nbsp; 
                   <a href="https://github.com/teeloren/mcu_data/blob/main/mcu.ipynb" class="btn btn-warning" role="button" target="_blank">Python Code</a><br><br>
                   <p class="freecode text-danger"> <a href='https://www.kaggle.com/datasets/davidgdong/marvel-cinematic-universe-box-office-dataset'target="_blank">Dataset source: Kaggle</a></p>
               </div>
             </div>
-            <div class=" col-md-8 align-items-md-stretch">
 
+
+          <!-- CHARTS -->
+          <div class='col-md-9'>
+            <div class="row">
+              <div class=" col-md-6 mt-3 align-items-md-stretch">
+              <div class="card">
+                <div class="card-header">
+                  <p>Histogram Example</p>
+                </div>
+                <div class="card-body">
+                  <img src='https://images.unsplash.com/photo-1651230018117-d0ddbe1e363d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60' class="bar" alt="">       
+                </div>
+              </div>
             </div>
+            <div class=" col-md-6 mt-3 align-items-md-stretch">
+              <div class="card">
+                <div class="card-header">
+                  <p>Line Chart Example</p>
+                </div>
+                <div class="card-body">
+                  <img src='https://images.unsplash.com/photo-1651230018117-d0ddbe1e363d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60' class="bar" alt=""> 
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+               <div class=" col-md-5 mt-3 align-items-md-stretch">
+              <div class="card">
+                <div class="card-header">
+                  <p>Pie Chart Example</p>
+                </div>
+                <div class="card-body">
+                  <img src='C:\Users\Tanesha Barnes\Desktop\python\mcu data\mcu_pie.png' class="bar" alt="">       
+                </div>
+              </div>
+            </div>
+            <div class=" col-md-7 mt-3 align-items-md-stretch">
+              <div class="card">
+                <div class="card-header">
+                 <p>Bar Example</p> 
+                </div>
+                <div class="card-body">
+                  <img src='https://github.com/teeloren/mcu_data/blob/main/mcu_bar.jpg' class="bar" alt="">
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class=" col-md-12 mt-3 align-items-md-stretch">
+              <div class="card">
+                <div class="card-header">
+                  <p>Scatter Plot Example</p>
+                </div>
+                <div class="card-body">
+                  <img src='C:\Users\Tanesha Barnes\Desktop\python\mcu data\mcu_scatter.gif' class="" alt="">       
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
         </section> 
       </main>
         <footer class="pt-3 mt-4 text-muted border-top">
