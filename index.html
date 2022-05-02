@@ -1,208 +1,344 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/20567435fb.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/20567435fb.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Python Project: MCU Dataset</title>
     <style>
-        a {
-            text-decoration: none;
-            
-        }
-        table, .freecode {
-            font-size: small;
-        }
-       footer{
-           font-size: small;
-       }
-       /* .bar{
+      a {
+        text-decoration: none;
+      }
+      table,
+      .freecode {
+        font-size: small;
+      }
+      footer {
+        font-size: small;
+      }
+      /* .bar{
          width:150px;
          height: auto;
        } */
-       li{
-         font-size: .9rem;
-       }
+      li {
+        font-size: 0.9rem;
+      }
     </style>
-</head>
-<body class="container">
-<!-- HEADER -->
+  </head>
+  <body class="container">
+    <!-- HEADER -->
     <header class="pb-3 mt-5 border-bottom">
-        <i class="fa-brands fa-python fa-2x"></i>
-        <span class="fs-4">&nbsp;Python Project </span>
-        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-
-          </a>
+      <i class="fa-brands fa-python fa-2x"></i>
+      <span class="fs-4">&nbsp;Python Project </span>
+      <a
+        href="/"
+        class="d-flex align-items-center text-dark text-decoration-none"
+      >
+      </a>
     </header>
 
-<!-- SUMMARY -->
+    <!-- SUMMARY -->
     <section>
-        <div class="mb-2 bg-light rounded-3">
-            <div class="container-fluid py-1">
-            <h1 class="display-6 fw-lighter text-primary ">Marvel Cinematic Universe Box Office Dataset</h1>
-            <p class="col-md-10 fs-6">Utilized python libraries' <em>pandas and matplotlib</em> to make calculations and visualizations from Marvel movies box office data. </p>
+      <div class="my-2 bg-light rounded-3">
+        <div class="container py-1">
+          <h1 class="display-6 fw-lighter text-primary">
+            Marvel Cinematic Universe Box Office Dataset
+          </h1>
+          <p class="col-md-10 fs-6">
+            Utilized python libraries' <em>pandas and matplotlib</em> to make
+            calculations and visualizations from Marvel movies box office data.
+          </p>
+
+          <button
+            class="btn btn-sm btn-outline-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Read More
+          </button>
+
+          <div class="collapse" id="collapseExample">
+            <div>
+              <h2 class="mt-3 txt-3 fw-lighter text-primary">
+                Project Description
+              </h2>
+              <p>
+                The dataset represent box office data for marvel movies like the
+                release date, tomato meter, audience score, movie duration,
+                producution budget, and domestic and worldwide box office ticket
+                sales.<br />
+              </p>
+              <ul>
+                <li>Dataset consisted of 27 rows and 10 columns.</li>
+                <li>Checked for null and duplicate values. None found.</li>
+                <li>
+                  3 columns types were changed from type object to type float.
+                </li>
+                <ul>
+                  <li>production_budget</li>
+                  <li>opening_weekend</li>
+                  <li>domestic_box_office</li>
+                </ul>
+              </ul>
+              <a
+                href="https://raw.githubusercontent.com/teeloren/mcu_data/main/mcu_box_office.csv"
+                class="btn btn-secondary"
+                role="button"
+                target="_blank"
+                >Dataset</a
+              >
+              &nbsp;
+              <a
+                href="https://github.com/teeloren/mcu_data/blob/main/mcu.ipynb"
+                class="btn btn-warning"
+                role="button"
+                target="_blank"
+                >Python Code</a
+              ><br /><br />
+              <p class="freecode text-danger">
+                <a
+                  href="https://www.kaggle.com/datasets/davidgdong/marvel-cinematic-universe-box-office-dataset"
+                  target="_blank"
+                  >Dataset source: Kaggle</a
+                >
+              </p>
             </div>
+          </div>
         </div>
-        </section>
+      </div>
+    </section>
 
     <section class="row d-flex justify-content-between">
-<!-- DESCRIPTION -->
-      <div class=" col-md-3 align-items-md-stretch">
-        <div class=" mt-3 p-3 fw-lighter text-dark bg-info rounded-3">
-            <h2 class="display-6 fw-lighter text-primary">Project Description</h2>
-            <p>The dataset represent box office data for marvel movies like the release date, tomato meter, audience score, movie duration, producution budget, and domestic and worldwide box office ticket sales.<br/></p>
-            <ul>
-              <li>Dataset consisted of 27 rows and 10 columns.</li>
-              <li>Checked for null and duplicate values. None found.</li>
-              <li>3 columns types were changed from type object to type float.</li>
-              <ul>
-                <li>production_budget</li> 
-                <li>opening_weekend</li>
-                <li>domestic_box_office</li>
-              </ul>
-            </ul> 
-            <a href="https://raw.githubusercontent.com/teeloren/mcu_data/main/mcu_box_office.csv" class="btn btn-secondary" role="button" target="_blank">Dataset</a> &nbsp; 
-            <a href="https://github.com/teeloren/mcu_data/blob/main/mcu.ipynb" class="btn btn-warning" role="button" target="_blank">Python Code</a><br><br>
-            <p class="freecode text-danger"> <a href='https://www.kaggle.com/datasets/davidgdong/marvel-cinematic-universe-box-office-dataset'target="_blank">Dataset source: Kaggle</a></p>
-        </div>
-        
-      </div>
-    
-<!-- CHARTS -->  
-      <div class='col-md-9'>
-        <p class="d-flex justify-content-end mt-2 text-primary">**Click on any chart below to display a larger view.</p>  
-    
+      <!-- CHARTS -->
+      <div class="col-12">
+        <p class="d-flex justify-content-end mt-2 text-primary">
+          **Click on any chart below to display a larger view.
+        </p>
+
         <div class="row">
-      <!-- HISTOGRAM -->  
-        <div class=" col-md-6 mt-3 align-items-md-stretch">
-          <div class="card" data-bs-toggle="modal" data-bs-target="#histModal">
-            <div class="card-header">
-              <p class="m-0">Histogram Example</p>
-            </div>
-            <div class="card-body">
-              <img src='images/mcu_hist.png' class="card-img" alt="histogram of MCU Movie Durations">       
+          <!-- HISTOGRAM -->
+          <div class="col-md-6 mt-3 align-items-md-stretch">
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#histModal"
+            >
+              <div class="card-header">
+                <p class="m-0">Histogram Example</p>
+              </div>
+              <div class="card-body">
+                <img
+                  src="images/mcu_hist.png"
+                  class="card-img"
+                  alt="histogram of MCU Movie Durations"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="modal fade" id="histModal" tabindex="-1" aria-labelledby="histModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-body">
-                <img src='images/mcu_hist.png' class="card-img" alt="histogram of MCU Movie Durations"> 
+          <div
+            class="modal fade"
+            id="histModal"
+            tabindex="-1"
+            aria-labelledby="histModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img
+                    src="images/mcu_hist.png"
+                    class="card-img"
+                    alt="histogram of MCU Movie Durations"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- LINE -->
+          <div class="col-md-6 mt-3 align-items-md-stretch">
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#lineModal"
+            >
+              <div class="card-header">
+                <p class="m-0">Line Chart Example</p>
+              </div>
+              <div class="card-body">
+                <img
+                  src="images/mcu_line.jpg"
+                  class="card-img"
+                  alt="MCU Movie Durations by Phases"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="lineModal"
+            tabindex="-1"
+            aria-labelledby="lineModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img
+                    src="images/mcu_line.jpg"
+                    class="card-img"
+                    alt="MCU Movie Durations by Phases"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      <!-- LINE -->
-        <div class=" col-md-6 mt-3 align-items-md-stretch">
-          <div class="card" data-bs-toggle="modal" data-bs-target="#lineModal">
-            <div class="card-header">
-              <p class="m-0">Line Chart Example</p>
-            </div>
-            <div class="card-body">
-              <img src='images/mcu_line.jpg' class="card-img" alt="MCU Movie Durations by Phases"> 
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="lineModal" tabindex="-1" aria-labelledby="lineModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-body">
-                <img src='images/mcu_line.jpg' class="card-img" alt="MCU Movie Durations by Phases"> 
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      <!-- PIE -->
+        <!-- PIE -->
         <div class="row">
           <div class="mx-auto col-md-6 mt-3 align-items-md-stretch">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#pieModal">
-          <div class="card-header">
-            <p class="m-0">Pie Chart Example</p>
-          </div>
-          <div class="card-body">
-            <img src='images/mcu_pie.png' class="card-img" alt="Tomato Meter Rating by MCU Phases">       
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="pieModal" tabindex="-1" aria-labelledby="pieModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-body">
-              <img src='images/mcu_pie.png' class="card-img" alt="Tomato Meter Rating by MCU Phases"> 
+            <div class="card" data-bs-toggle="modal" data-bs-target="#pieModal">
+              <div class="card-header">
+                <p class="m-0">Pie Chart Example</p>
+              </div>
+              <div class="card-body">
+                <img
+                  src="images/mcu_pie.png"
+                  class="card-img"
+                  alt="Tomato Meter Rating by MCU Phases"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- BAR -->
-      <div class="mx-auto col-md-6 mt-3 align-items-md-stretch">
-        <div class="card" data-bs-toggle="modal" data-bs-target="#barModal">
-          <div class="card-header">
-            <p class="m-0">Bar Chart Example</p> 
-          </div>
-          <div class="card-body">
-            <img src='images/mcu_bar.jpg' class="card-img" alt="MCU Movie Production Budget by Phase">
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="barModal" tabindex="-1" aria-labelledby="barModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-body">
-              <img src='images/mcu_bar.jpg' class="card-img" alt="Bar Chart of MCU Movie Production Budget by Phase"> 
+          <div
+            class="modal fade"
+            id="pieModal"
+            tabindex="-1"
+            aria-labelledby="pieModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img
+                    src="images/mcu_pie.png"
+                    class="card-img"
+                    alt="Tomato Meter Rating by MCU Phases"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    
-        
-      </div>
-       <div class="row">
-      <!-- SCATTER PLOT -->
-          <div class="mx-auto col-md-12 mt-3 align-items-md-stretch">
-          <div class="card" data-bs-toggle="modal" data-bs-target="#scatterModal">
-            <div class="card-header">
-              <p class="m-0">Scatter Plot Example</p>
-            </div>
-            <div class="card-body">
-              <img src='images/mcu_scatter.png' class="card-img" alt="Scatter Plot of MCU Movie Production Budget By Audience Score">       
+          <!-- BAR -->
+          <div class="mx-auto col-md-6 mt-3 align-items-md-stretch">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#barModal">
+              <div class="card-header">
+                <p class="m-0">Bar Chart Example</p>
+              </div>
+              <div class="card-body">
+                <img
+                  src="images/mcu_bar.jpg"
+                  class="card-img"
+                  alt="MCU Movie Production Budget by Phase"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="modal fade" id="scatterModal" tabindex="-1" aria-labelledby="scatterModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-body">
-                <img src='images/mcu_scatter.png' class="card-img" alt="Scatter Plot of MCU Movie Production Budget By Audience Score"> 
+          <div
+            class="modal fade"
+            id="barModal"
+            tabindex="-1"
+            aria-labelledby="barModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img
+                    src="images/mcu_bar.jpg"
+                    class="card-img"
+                    alt="Bar Chart of MCU Movie Production Budget by Phase"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="row">
+          <!-- SCATTER PLOT -->
+          <div class="mx-auto col-md-12 mt-3 align-items-md-stretch">
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#scatterModal"
+            >
+              <div class="card-header">
+                <p class="m-0">Scatter Plot Example</p>
+              </div>
+              <div class="card-body">
+                <img
+                  src="images/mcu_scatter.png"
+                  class="card-img"
+                  alt="Scatter Plot of MCU Movie Production Budget By Audience Score"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="scatterModal"
+            tabindex="-1"
+            aria-labelledby="scatterModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img
+                    src="images/mcu_scatter.png"
+                    class="card-img"
+                    alt="Scatter Plot of MCU Movie Production Budget By Audience Score"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section> 
-    
+    </section>
+
     <footer class="pt-3 mt-4 text-muted border-top">
       <p>&copy; Copyright 2022 | created by Tanesha B.</p>
     </footer>
 
     <script>
-      var myModal = document.getElementById('myModal')
-      var myInput = document.getElementById('myInput')
+      var myModal = document.getElementById("myModal");
+      var myInput = document.getElementById("myInput");
 
-      myModal.addEventListener('shown.bs.modal', function () {
-        myInput.focus()
-      })
+      myModal.addEventListener("shown.bs.modal", function () {
+        myInput.focus();
+      });
     </script>
-         <!-- $("#pop").on("click", function() {
+    <!-- $("#pop").on("click", function() {
           $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
           $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
        }); -->
-</body>
+  </body>
 </html>
-
